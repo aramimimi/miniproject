@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,7 +111,13 @@ footer {
     <a class="nav-link bi bi-chat-left-text fs-6 text-center" href="/omakaseProject/board/noticeBoard"> 게시판</a>
   </li>
     <li class="nav-item">
-    <a class="nav-link bi bi-emoji-smile fs-6 text-center" href="/omakaseProject/member/memberInfo"> 마이페이지</a>
+    	<c:if test="${sessionScope.memId == null}">
+    		 <a class="nav-link bi bi-emoji-smile fs-6 text-center" href="/omakaseProject/member/loginForm"> 로그인</a>
+		</c:if>
+		
+		<c:if test="${memId !=null}">
+			 <a class="nav-link bi bi-emoji-smile fs-6 text-center" href="/omakaseProject/member/memberInfo"> 마이페이지</a>
+		</c:if>
   </li>
   <!-- 관리자 계정만 보이게 할 예정-->
 <!--     <li class="nav-item"> -->

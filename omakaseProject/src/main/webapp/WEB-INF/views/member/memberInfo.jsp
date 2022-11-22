@@ -1,11 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+.my_wrap {
+	margin-left: -260px;
+	margin-top: 100px;
+}
+
 .my_wrap > h1 {
     background: #fff;
     width: 250px;
@@ -16,10 +22,10 @@
 ul {
 	list-style-type: none;
 	overflow: auto;
-  	position: fixed;
+  	/*position: fixed; */
 }
 #container {
-	margin-left: 280px;
+	margin-left: -10px;
 	width: 90%;
 	padding: 30px 0;
 }
@@ -101,7 +107,10 @@ input.button {
 	</div>
 </div>  
 
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script type="text/javascript" src="../js/member.js"></script>
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
