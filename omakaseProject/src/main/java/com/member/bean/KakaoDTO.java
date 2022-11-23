@@ -1,8 +1,9 @@
 
-package com.kakao.dto;
-
+package com.member.bean;
 
 public class KakaoDTO {
-	private long k_number;
-	private String 
+	private String kname;
+	private String kemail;
+	private String kbirth;
+	
 }
