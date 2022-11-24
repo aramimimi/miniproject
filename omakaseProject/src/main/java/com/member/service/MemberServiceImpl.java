@@ -28,6 +28,12 @@ public class MemberServiceImpl implements MemberService {
 		return userDAO.getMember(id);
 	}
 
+	@Override
+	public void delete(String id) {
+		userDAO.delete(id);
+		
+	}
+
 
 
 

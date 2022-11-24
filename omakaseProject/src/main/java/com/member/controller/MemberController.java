@@ -47,16 +47,18 @@ public class MemberController {
 		return "index2";
 	}
 	
-//	@PostMapping(value="update")   
-//	@ResponseBody
-//	public void update(@ModelAttribute UserDTO userDTO) {
-//		memberService.update(userDTO);
-//	}
 	
 	@PostMapping(value="update")   
 	@ResponseBody
 	public void update(@RequestParam Map<String, Object> map) {		
 		memberService.update(map);
+	}
+	
+	//회원탈퇴
+	@RequestMapping(value="delete")
+	@ResponseBody
+	public void delete(@RequestParam String id) {
+		memberService.delete(id);
 	}
 	
 	
