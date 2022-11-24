@@ -8,7 +8,9 @@
  									  ,#{resDate}
  									  ,#{resTime}
  									  ,#{resAdult}
- 									  ,#{resKid})
+ 									  ,#{resKid}
+ 									  ,#{resMenuA}
+ 									  ,#{resMenuB})
  	</insert>
  	<select id="getReserve" parameterType="String" resultType="res">
  		select * from reservation where resDate=#{resDate}

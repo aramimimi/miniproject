@@ -110,6 +110,8 @@ body {
 	line-height: 1.8;
 }
 /* footer end */
+
+
 </style>
 </head>
 <body>
@@ -121,7 +123,7 @@ body {
 <div id="container">
 
 <div id="nav">
-	<jsp:include page="./main/nav.jsp" />
+	<jsp:include page="${nav }" />
 </div>
 
 <div id="section">

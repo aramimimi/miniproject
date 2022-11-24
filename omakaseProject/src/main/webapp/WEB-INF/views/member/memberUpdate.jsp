@@ -7,23 +7,23 @@
 <title>Insert title here</title>
 <style type="text/css">
 
-.my_wrap {
-	margin-left: -200px;
-	margin-top: 100px;
-}
+/* .my_wrap { */
+/* 	margin-left: -200px; */
+/* 	margin-top: 100px; */
+/* } */
 
-.my_wrap > h4 {
-    background: #fff;
-    width: 250px;
-    hight: 800px;
-	padding-bottom: 5px;
-}
+/* .my_wrap > h4 { */
+/*     background: #fff; */
+/*     width: 250px; */
+/*     hight: 800px; */
+/* 	padding-bottom: 5px; */
+/* } */
 
-ul {
-	list-style-type: none;
-	overflow: auto;
-  	/*position: fixed;*/
-}
+/* ul { */
+/* 	list-style-type: none; */
+/* 	overflow: auto; */
+/*   	/*position: fixed;*/ */
+/* } */
 
 div#container {
 	margin-top: -10px;
@@ -73,14 +73,14 @@ div#container {
 </head>
 <body>
 
-<div class="my_wrap">
-	<h4><span>마이페이지</span></h4>
-	<ul>
-		<li><a href="http://localhost:8080/omakaseProject/member/memberInfo" id="resInfo">나의 예약정보</a></li>
-		<li><a href="http://localhost:8080/omakaseProject/member/memberUpdate">회원정보 수정</a></li>
-		<li><a href="#" id="memberDelete">회원 탈퇴</a></li>
-	</ul>
-</div>
+<!-- <div class="my_wrap"> -->
+<!-- 	<h4><span>마이페이지</span></h4> -->
+<!-- 	<ul> -->
+<!-- 		<li><a href="http://localhost:8080/omakaseProject/member/memberInfo" id="resInfo">나의 예약정보</a></li> -->
+<!-- 		<li><a href="http://localhost:8080/omakaseProject/member/memberUpdate">회원정보 수정</a></li> -->
+<!-- 		<li><a href="#" id="memberDelete">회원 탈퇴</a></li> -->
+<!-- 	</ul> -->
+<!-- </div> -->
 
 <div id="container">
 

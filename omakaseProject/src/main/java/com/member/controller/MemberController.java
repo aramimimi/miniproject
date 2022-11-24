@@ -25,6 +25,7 @@ public class MemberController {
 	@RequestMapping(value="memberInfo", method=RequestMethod.GET)
 	public String memberInfo(@ModelAttribute String id, Model model){
 		model.addAttribute("display", "member/memberInfo.jsp");
+		model.addAttribute("nav", "main/myPageNav.jsp");
 		model.addAttribute("id", id);
 		return "index2";
 	}
@@ -43,6 +44,7 @@ public class MemberController {
 	@RequestMapping(value="memberUpdate", method=RequestMethod.GET)
 	public String memberUpdate(Model model){
 		model.addAttribute("display", "member/memberUpdate.jsp");
+		model.addAttribute("nav", "main/myPageNav.jsp");
 		
 		return "index2";
 	}
@@ -68,6 +70,7 @@ public class MemberController {
 	@RequestMapping(value="loginForm", method=RequestMethod.GET)
 	public String loginForm(Model model){
 		model.addAttribute("display", "member/loginForm.jsp");
+		model.addAttribute("nav", "main/myPageNav.jsp");
 		
 		return "index2";
 	}

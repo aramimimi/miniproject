@@ -105,7 +105,7 @@ footer {
     <a class="nav-link bi bi-stopwatch fs-6 text-center " href="/omakaseProject/res/resForm"> 실시간 아람예약</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link bi bi-calendar-check fs-6 text-center" href="/omakaseProject/res/resForm"> 예약 안내</a>
+    <a class="nav-link bi bi-calendar-check fs-6 text-center" href="/omakaseProject/res/resExp"> 예약 안내</a>
   </li>
   <li class="nav-item">
     <a class="nav-link bi bi-chat-left-text fs-6 text-center" href="/omakaseProject/board/noticeBoard"> 게시판</a>

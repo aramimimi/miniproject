@@ -12,6 +12,7 @@ public class BoardController {
 	@RequestMapping(value="noticeBoard", method=RequestMethod.GET)
 	public String index(Model model){
 		model.addAttribute("display", "board/noticeBoard.jsp");
+		model.addAttribute("nav", "main/boardNav.jsp");
 		
 		return "index2";
 	}

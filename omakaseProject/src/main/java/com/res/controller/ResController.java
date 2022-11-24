@@ -22,8 +22,17 @@ public class ResController {
 	private ResService resService;
 	
 	@RequestMapping(value="resForm", method=RequestMethod.GET)
-	public String index(Model model){
+	public String resForm(Model model){
 		model.addAttribute("display", "res/resForm.jsp");
+		model.addAttribute("nav", "main/resNav.jsp");
+		
+		return "index2";
+	}
+	
+	@RequestMapping(value="resExp", method=RequestMethod.GET)
+	public String resExp(Model model){
+		model.addAttribute("display", "res/resExp.jsp");
+		model.addAttribute("nav", "main/resNav.jsp");
 		
 		return "index2";
 	}
