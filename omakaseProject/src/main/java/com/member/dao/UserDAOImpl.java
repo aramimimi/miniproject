@@ -26,4 +26,10 @@ public class UserDAOImpl implements UserDAO {
 		
 	}
 
+	@Override
+	public void delete(String id) {
+		sqlSession.delete("memberSQL.delete", id);
+		
+	}
+
 }

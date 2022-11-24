@@ -23,8 +23,12 @@
 	</update>
 	
 	<select id="getMember" parameterType="String" resultType="com.member.bean.UserDTO">
-			select * from omakaseM where id = #{id}
+		select * from omakaseM where id = #{id}
 	</select>
+	
+	<delete id="delete" parameterType="String">
+		delete omakaseM where id=#{id}
+	</delete>
 
 
 </mapper>

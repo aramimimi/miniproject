@@ -9,6 +9,8 @@ public interface MemberService {
 	public void update(Map<String, Object> map);
 
 	public UserDTO getMember(String id);
+
+	public void delete(String id);
 	
 
 }

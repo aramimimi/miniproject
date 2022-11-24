@@ -8,16 +8,17 @@
 <title>Insert title here</title>
 <style type="text/css">
 .my_wrap {
-	margin-left: -260px;
+	margin-left: -200px;
 	margin-top: 100px;
 }
 
-.my_wrap > h1 {
+.my_wrap > h4 {
     background: #fff;
     width: 250px;
     hight: 800px;
-    text-decoration: none;
+	padding-bottom: 5px;
 }
+
 
 ul {
 	list-style-type: none;
@@ -66,9 +67,9 @@ input.button {
 <div class="my_wrap">
 	<h1><span>마이페이지</span></h1>
 	<ul>
-		<li><a href="http://localhost:8080/omakaseProject/member/memberInfo">나의 예약정보</a></li>
+		<li><a href="http://localhost:8080/omakaseProject/member/memberInfo" id="resInfo">나의 예약정보</a></li>
 		<li><a href="http://localhost:8080/omakaseProject/member/memberUpdate">회원정보 수정</a></li>
-		<li><a href="#" >회원 탈퇴</a></li>
+		<li><a href="#" id="memberDelete">회원 탈퇴</a></li>
 	</ul>
 </div>
 
@@ -79,22 +80,23 @@ input.button {
 	</div>
 	
 	<div class="contents_body">
-		<table  class="table">
+		<table class="table">
+		<input type="text" id="id" value="ho"> 테스트아이디값. 숨길예정
 			<tr>
 				<th>번호</th>
 				<th>1</th>
 			</tr>
 			<tr>
 				<th>예약일</th>
-				<th>11.11</th>
+				<th>${ resDTO.resDate} </th>
 			</tr>
 			<tr>
 				<th>예약시간</th>
-				<th>19:00</th>
+				<th>${resDTO.resTime }</th>
 			</tr>
 			<tr>
 				<th>인원</th>	
-				<th>총인원2   (성인2, 소아0)</th>
+				<th>'${resDTO.resAdult }'+'${resDTO.resKid }'   ('${resDTO.resAdult }', '${resDTO.resKid }')</th>
 			</tr>
 			<tr>
 				<th>예약변경</th>
@@ -110,6 +112,48 @@ input.button {
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script type="text/javascript">
+$(function(){
+	$('#resInfo').click(function(){
+		$.ajax({
+			type: '',
+			url: '',
+			data: '',
+			dataType:  ,
+			success: function(){
+				
+			},
+			error: function(err){
+				console.log(err)
+			}
+			
+		})//ajax
+	})
+});
+
+
+$(function(){
+	$('#memberDelete').click(function(){
+		if(confirm('정말로 탈퇴 하시겠습니까?')){
+			$.ajax({
+				type: 'post',
+				url: '/omakaseProject/member/delete',
+				data: 'id=' + $('#id').val() ,
+				/* 아이디 세션에서 얻어서 가지고 갈 예정. 테스트라서 id값 일단 줌 */
+				success: function(){
+					alert('탈퇴가 완료되었습니다.'+ '\r\n' +'이용해 주셔서 감사합니다.')
+					
+				}, 
+				error: function(err){
+					console.log(err)
+				} 
+					
+			})	//ajax	
+		}
+	});
+	
+});
+
+
 
 </script>
 </body>
